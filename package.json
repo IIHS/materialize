@@ -45,5 +45,19 @@
   },
   "scripts": {
     "test": "grunt travis --verbose"
+  },
+  "jspm": {
+    "main": "./dist/js/materialize",
+    "format": "global",
+    "dependencies": {
+      "jquery": "npm:jquery@^2.2.0"
+    },
+    "shim": {
+      "materialize-css": {
+        "deps": [
+          "jquery"
+        ]
+      }
+    }
   }
 }
