@@ -15,3 +15,6 @@ bower_components
 **/#*#
 **/.#*
 .grunt/
+/materialize.sln
+/.vs/materialize/v14/.suo
+/.vs/config/applicationhost.config
