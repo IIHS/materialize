@@ -49,7 +49,8 @@
       }
 
       if ($active[0] !== undefined) {
-        $content = $($active[0].hash);
+        if (!$($active[0]).data('target'))
+          $content = $($active[0].hash);
       }
 
       // append indicator then set indicator width to tab width
@@ -77,7 +78,8 @@
 
       // Hide the remaining content
       $links.not($active).each(function () {
-        $(this.hash).hide();
+        if (!$(this).data('target'))
+          $(this.hash).hide();
       });
 
 
@@ -104,7 +106,8 @@
 
         // Update the variables with the new link and content
         $active = $(this);
-        $content = $(this.hash);
+        if (!$active.data('target'))
+          $content = $(this.hash);
         $links = $this.find('li.tab a');
         var activeRect = $active.position();
 
@@ -116,7 +119,8 @@
           $index = 0;
         }
         // Change url to current tab
-        // window.location.hash = $active.attr('href');
+        if ($active.data('target'))
+          window.location.hash = $active.attr('href');
 
         if ($content !== undefined) {
           $content.show();
