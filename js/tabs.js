@@ -118,10 +118,7 @@
         if ($index < 0) {
           $index = 0;
         }
-        // Change url to current tab
-        if ($active.data('target'))
-          window.location.hash = $active.attr('href');
-
+        
         if ($content !== undefined) {
           $content.show();
           if (typeof(options.onShow) === "function") {
