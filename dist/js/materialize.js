@@ -1,4 +1,4 @@
-/* */ 
+/* */
 "format global";
 /*!
  * Materialize v0.97.7 (http://materializecss.com)
@@ -1367,9 +1367,6 @@ $(document).ready(function(){
         if ($index < 0) {
           $index = 0;
         }
-        // Change url to current tab
-        if ($active.data('target'))
-          window.location.hash = $active.attr('href');
 
         if ($content !== undefined) {
           $content.show();
@@ -2073,7 +2070,7 @@ $(document).ready(function(){
         }
         else {
           // Insert as text;
-          toast.innerHTML = html; 
+          toast.innerHTML = html;
         }
         // Bind hammer
         var hammerHandler = new Hammer(toast, {prevent_default: false});
