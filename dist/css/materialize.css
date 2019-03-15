@@ -1,5 +1,5 @@
 /*!
- * Materialize v0.100.2 (http://materializecss.com)
+ * Materialize vundefined (http://materializecss.com)
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
@@ -7541,7 +7541,7 @@ input[type=range]:focus::-ms-fill-upper {
     -webkit-transform: translateX(105%);
             transform: translateX(105%);
   }
-  .side-nav a {
+  .side-nav > a {
     padding: 0 16px;
   }
   .side-nav .user-view,
